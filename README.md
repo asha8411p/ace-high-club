@@ -1,1 +1,1 @@
-Visit our website on: [[http://localhost:3000/api/hello)](https://ace-high-club-prototype.vercel.app/)
+Visit our website on: [Ace High Club](https://ace-high-club-prototype.vercel.app/)
