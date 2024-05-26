@@ -73,8 +73,8 @@ export default function SignUp() {
         setIsAdmin(true)
       }
       setSession(true)
-      signUp(userData); // Call signUp function with user data
-      router.push(`/profile/${userId}`); // Redirect to profile page after successful sign-up
+      signUp(userData);
+      router.push(`/profile/${userId}`);
     } catch (error) {
       console.error('Sign-up failed:', error);
     }

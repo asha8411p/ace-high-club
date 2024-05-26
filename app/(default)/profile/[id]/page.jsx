@@ -1,4 +1,3 @@
-"use client"
 import React, { useContext } from 'react';
 import Particles from "../../../../components/particles";
 import { CartContext } from "../../../contexts/CartContext";

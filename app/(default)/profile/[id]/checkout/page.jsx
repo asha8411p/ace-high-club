@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, {useContext, useState} from 'react';
 import PaymentReceipt from './PaymentReceipt';
 import Particles from "../../../../../components/particles";
@@ -34,7 +34,7 @@ const CheckoutPage = () => {
             </div>
 
             {/* Particles animation */}
-            <Particles className="absolute inset-0 h-96 -z-10" quantity={15} />
+            {typeof window !== 'undefined' && <Particles className="absolute inset-0 h-96 -z-10" quantity={15} />}
 
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="pt-16">
