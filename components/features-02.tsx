@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import Particles from './particles'
 import Highlighter, { HighlighterItem } from './highlighter'
@@ -5,8 +6,19 @@ import Highlighter, { HighlighterItem } from './highlighter'
 import FeatureImg01 from '@/public/images/feature-image-01.png'
 import FeatureImg02 from '@/public/images/feature-image-02.png'
 import FeatureImg03 from '@/public/images/feature-image-03.png'
+import {useRouter} from "next/navigation";
 
 export default function Features02() {
+  const router = useRouter();
+
+  const handleServices = () => {
+    router.push("/customers")
+  }
+
+  const handleLeaderboard = () => {
+    router.push('/pricing')
+  }
+
   return (
     <section className="relative">
 
@@ -63,7 +75,7 @@ export default function Features02() {
                         <div className="absolute w-1/4 h-1/4 translate-z-0 bg-purple-400 rounded-full blur-[40px]" />
                       </div>
                       {/* Text */}
-                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8 md:pr-0">
+                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8 md:pr-0"  onClick={handleServices}>
                         <div className="mb-5">
                           <div>
                             <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">Elevate Your Venue with Ace High Club</h3>
@@ -96,7 +108,7 @@ export default function Features02() {
                         <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]" />
                       </div>
                       {/* Text */}
-                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
+                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8" onClick={handleLeaderboard}>
                         <div>
                           <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">Winner's circle</h3>
                           <p className="text-slate-400">Step into the spotlight and compete in major events with Ace High Club, where champions are made and the stakes are always high.</p>
@@ -127,9 +139,9 @@ export default function Features02() {
                         <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]" />
                       </div>
                       {/* Text */}
-                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
+                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8" onClick={handleLeaderboard}>
                         <div>
-                          <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1"> Leaderbord </h3>
+                          <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1"> Leaderboard </h3>
                           <p className="text-slate-400">Rise to the top and secure your place among the elite on our leaderboard, where every hand could catapult you to poker stardom.</p>
                         </div>
                         <div>

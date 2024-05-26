@@ -7,8 +7,8 @@ import Link from "next/link";
 import { useAuth } from "../../../contexts/AuthContext";
 
 export default function ProfilePage() {
-    const { user } = useAuth();
-    const { cart } = useContext(CartContext);
+    const { user, isAdmin } = useAuth();
+    const { cart, removeFromCart } = useContext(CartContext);
 
     // Filter items into cart and purchased items
     const cartItems = cart.filter(item => !item.isPurchased);
@@ -28,8 +28,11 @@ export default function ProfilePage() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="pt-16">
                     <div className="mt-12 md:mt-16">
-                        <h1 className="h1 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">{user?.name}</h1>
+                        <h1 className="h1 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">{user?.name ? user?.name : "John Smith"}</h1>
                     </div>
+                    {isAdmin && (
+                        <Link href="/admin" className="text-sm from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Go to Admin</Link>
+                    )}
 
                     {/* Cart Items Section */}
                     {cartItems.length > 0 && (
