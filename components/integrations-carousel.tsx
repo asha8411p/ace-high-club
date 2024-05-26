@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import IntegrationImg01 from '@/public/images/integrations-01.svg'
 import IntegrationImg02 from '@/public/images/integrations-02.svg'
@@ -76,10 +75,12 @@ export default function IntegrationsCarousel() {
                   <Image src={IntegrationImg01} width={40} height={40} alt="Icon 01" />
                   <Image className="absolute top-0 -right-1" src={Star} width={16} height={16} alt="Star" aria-hidden="true" />
                 </div>
-                <Link className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0" href="/integrations/single-post">Retool</Link>
+                <h2 className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0">National Poker League (NPL)</h2>
               </div>
               <div className="grow mb-4">
-                <div className="text-sm text-slate-400">Stellar makes it easy to build extensions by providing an authentication provider that handles the OAuth flow.</div>
+                <div className="text-sm text-slate-400">
+                  The NPL is a premier organization for poker events across Australia, managing around 500 poker events weekly. It caters to a broad spectrum of poker enthusiasts with its diverse event offerings, including major tournaments and series with substantial prize pools.
+                </div>
               </div>
               <div className="flex justify-between">
                 <div className="flex -space-x-3 -ml-0.5">
@@ -105,10 +106,12 @@ export default function IntegrationsCarousel() {
                   <Image src={IntegrationImg02} width={40} height={40} alt="Icon 02" />
                   <Image className="absolute top-0 -right-1" src={Star} width={16} height={16} alt="Star" aria-hidden="true" />
                 </div>
-                <Link className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0" href="/integrations/single-post">Zapier</Link>
+                <h2 className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0">Australian Poker League (APL)</h2>
               </div>
               <div className="grow mb-4">
-                <div className="text-sm text-slate-400">Stellar makes it easy to build extensions by providing an authentication provider that handles the OAuth flow.</div>
+                <div className="text-sm text-slate-400">
+                  Known as one of the leading providers of both free-to-play and buy-in poker events in Australasia, the APL is distinguished by its innovative approach to in-venue entertainment across hotels, restaurants, and clubs around Australia.
+                </div>
               </div>
               <div className="flex justify-between">
                 <div className="flex -space-x-3 -ml-0.5">
@@ -133,10 +136,13 @@ export default function IntegrationsCarousel() {
                   <Image src={IntegrationImg03} width={40} height={40} alt="Icon 03" />
                   <Image className="absolute top-0 -right-1" src={Star} width={16} height={16} alt="Star" aria-hidden="true" />
                 </div>
-                <Link className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0" href="/integrations/single-post">Airtable</Link>
+                <h2 className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0">Kings Poker</h2>
               </div>
               <div className="grow mb-4">
-                <div className="text-sm text-slate-400">Stellar makes it easy to build extensions by providing an authentication provider that handles the OAuth flow.</div>
+                <div className="text-sm text-slate-400">
+                  Specializing in offering a range of poker competitions, Kings Poker provides platforms for online and in-person poker games. They are known for their quality
+                  poker events that cater to a wide range of poker players, from casual to serious competitors
+                </div>
               </div>
               <div className="flex justify-between">
                 <div className="flex -space-x-3 -ml-0.5">
@@ -162,10 +168,13 @@ export default function IntegrationsCarousel() {
                   <Image src={IntegrationImg04} width={40} height={40} alt="Icon 04" />
                   <Image className="absolute top-0 -right-1" src={Star} width={16} height={16} alt="Star" aria-hidden="true" />
                 </div>
-                <Link className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0" href="/integrations/single-post">Jira</Link>
+                <h2 className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0">Australian Pro Poker (APP)</h2>
               </div>
               <div className="grow mb-4">
-                <div className="text-sm text-slate-400">Stellar makes it easy to build extensions by providing an authentication provider that handles the OAuth flow.</div>
+                <div className="text-sm text-slate-400">
+                  APP focuses on delivering a variety of poker tournaments that welcome players from different jurisdictions. It’s an ideal spot for Australian poker enthusiasts to engage
+                  in competitive poker play, offering diverse tournament formats to suit various skill levels
+                </div>
               </div>
               <div className="flex justify-between">
                 <div className="flex -space-x-3 -ml-0.5">
@@ -191,10 +200,13 @@ export default function IntegrationsCarousel() {
                   <Image src={IntegrationImg05} width={40} height={40} alt="Icon 05" />
                   <Image className="absolute top-0 -right-1" src={Star} width={16} height={16} alt="Star" aria-hidden="true" />
                 </div>
-                <Link className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0" href="/integrations/single-post">GitLab</Link>
+                <h2 className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 group-hover:before:absolute group-hover:before:inset-0">888 Poker League (888PL)</h2>
               </div>
               <div className="grow mb-4">
-                <div className="text-sm text-slate-400">Stellar makes it easy to build extensions by providing an authentication provider that handles the OAuth flow.</div>
+                <div className="text-sm text-slate-400">
+                  The 888PL distinguishes itself as the first and only league of its kind in the country, organizing
+                  over 250 events weekly. These events range from free poker tournaments to competitive gatherings in hotels and bars, making poker accessible and enjoyable for a wide audience
+                </div>
               </div>
               <div className="flex justify-between">
                 <div className="flex -space-x-3 -ml-0.5">

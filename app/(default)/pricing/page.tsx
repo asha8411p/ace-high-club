@@ -13,9 +13,9 @@ export default function Pricing() {
   return (
     <>
       <PricingSection />
-      <Features />
-      <Customers />
-      <Faqs />
+      {/*<Features />*/}
+      {/*<Customers />*/}
+      {/*<Faqs />*/}
       <Cta />
     </>
   )

@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Highlighter, { HighlighterItem } from './highlighter'
 
-import FeatureImg04 from '@/public/images/feature-image-04.png'
+// import FeatureImg04 from '@/public/images/feature-image-04.png'
+import Shot from '@/public/images/shot.jpeg'
 
 export default function Features03() {
   return (
@@ -38,7 +39,8 @@ export default function Features03() {
                     <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
                       <div className="absolute inset-0 translate-z-0 bg-purple-500 rounded-full blur-[120px]" />
                     </div>
-                    <Image src={FeatureImg04} width={768} height={400} alt="Feature 04" />
+                    {/*<Image src={FeatureImg04} width={768} height={400} alt="Feature 04" />*/}
+                    <Image src={Shot} width={768} height={400} alt="Feature 04" />
                   </div>
                 </HighlighterItem>
               </Highlighter>

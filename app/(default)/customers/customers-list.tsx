@@ -1,27 +1,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import CustomerImg01 from '@/public/images/customer-01.svg'
 import CustomerBg01 from '@/public/images/customer-bg-01.png'
 import CustomerImg02 from '@/public/images/customer-02.svg'
 import CustomerBg02 from '@/public/images/customer-bg-02.png'
 import CustomerImg03 from '@/public/images/customer-03.svg'
 import CustomerBg03 from '@/public/images/customer-bg-03.png'
-import CustomerImg04 from '@/public/images/customer-04.svg'
-import CustomerBg04 from '@/public/images/customer-bg-04.png'
-import CustomerImg05 from '@/public/images/customer-05.svg'
-import CustomerBg05 from '@/public/images/customer-bg-05.png'
-import CustomerImg06 from '@/public/images/customer-06.svg'
-import CustomerBg06 from '@/public/images/customer-bg-06.png'
-import CustomerImg07 from '@/public/images/customer-07.svg'
-import CustomerBg07 from '@/public/images/customer-bg-07.png'
-import CustomerImg08 from '@/public/images/customer-08.svg'
-import CustomerBg08 from '@/public/images/customer-bg-08.png'
-import CustomerImg09 from '@/public/images/customer-09.svg'
-import CustomerBg09 from '@/public/images/customer-bg-09.png'
-import CustomerImg10 from '@/public/images/customer-10.svg'
-import CustomerBg10 from '@/public/images/customer-bg-10.png'
 import CustomerAvatar01 from '@/public/images/team-01.png'
 import CustomerAvatar02 from '@/public/images/team-02.png'
+
+import GambleAware from '@/public/images/gamble-aware.svg'
 import Particles from '@/components/particles'
 import Highlighter, { HighlighterItem02 } from '@/components/highlighter'
 
@@ -30,64 +17,64 @@ export default function CustomersList() {
   const items = [
     {
       name: 'Customer name',
-      img: CustomerImg01,
-      bg: CustomerBg01,
-      link: '/customers/single-post',
+      img: CustomerImg03,
+      bg: CustomerBg03,
+      link: '/customers/connect-with-others',
     },
     {
       name: 'Customer name',
       img: CustomerImg02,
       bg: CustomerBg02,
-      link: '/customers/single-post',
+      link: '/customers/gambling-help-online',
     },
     {
       name: 'Customer name',
-      img: CustomerImg03,
-      bg: CustomerBg03,
-      link: '/customers/single-post',
+      img: GambleAware,
+      bg: CustomerBg01,
+      link: '/customers/gamble-aware',
     },
-    {
-      name: 'Customer name',
-      img: CustomerImg04,
-      bg: CustomerBg04,
-      link: '/customers/single-post',
-    },
-    {
-      name: 'Customer name',
-      img: CustomerImg05,
-      bg: CustomerBg05,
-      link: '/customers/single-post',
-    },
-    {
-      name: 'Customer name',
-      img: CustomerImg06,
-      bg: CustomerBg06,
-      link: '/customers/single-post',
-    },
-    {
-      name: 'Customer name',
-      img: CustomerImg07,
-      bg: CustomerBg07,
-      link: '/customers/single-post',
-    },
-    {
-      name: 'Customer name',
-      img: CustomerImg08,
-      bg: CustomerBg08,
-      link: '/customers/single-post',
-    },
-    {
-      name: 'Customer name',
-      img: CustomerImg09,
-      bg: CustomerBg09,
-      link: '/customers/single-post',
-    },
-    {
-      name: 'Customer name',
-      img: CustomerImg10,
-      bg: CustomerBg10,
-      link: '/customers/single-post',
-    },
+    // {
+    //   name: 'Customer name',
+    //   img: CustomerImg04,
+    //   bg: CustomerBg04,
+    //   link: '/customers/single-post',
+    // },
+    // {
+    //   name: 'Customer name',
+    //   img: CustomerImg05,
+    //   bg: CustomerBg05,
+    //   link: '/customers/single-post',
+    // },
+    // {
+    //   name: 'Customer name',
+    //   img: CustomerImg06,
+    //   bg: CustomerBg06,
+    //   link: '/customers/single-post',
+    // },
+    // {
+    //   name: 'Customer name',
+    //   img: CustomerImg07,
+    //   bg: CustomerBg07,
+    //   link: '/customers/single-post',
+    // },
+    // {
+    //   name: 'Customer name',
+    //   img: CustomerImg08,
+    //   bg: CustomerBg08,
+    //   link: '/customers/single-post',
+    // },
+    // {
+    //   name: 'Customer name',
+    //   img: CustomerImg09,
+    //   bg: CustomerBg09,
+    //   link: '/customers/single-post',
+    // },
+    // {
+    //   name: 'Customer name',
+    //   img: CustomerImg10,
+    //   bg: CustomerBg10,
+    //   link: '/customers/single-post',
+    // },
   ]
 
   return (

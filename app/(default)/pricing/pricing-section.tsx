@@ -2,8 +2,16 @@ import Image from 'next/image'
 import Particles from '@/components/particles'
 import Illustration from '@/public/images/page-illustration.svg'
 import Pricing from '@/components/pricing'
+import Leaderboard from "@/components/Leaderboard";
 
 export default function PricingSection() {
+    const players = [
+        { name: 'James Johnson', playingTime: '2 years', winnings: 5000, averageWinRate: 65, preferredGame: 'Texas Hold\'em' },
+        { name: 'Steve Nocho', playingTime: '3 years', winnings: 7000, averageWinRate: 72, preferredGame: 'Omaha' },
+        // Add more players as needed
+    ];
+
+
   return (
     <section className="relative">
 
@@ -32,7 +40,8 @@ export default function PricingSection() {
               <p className="text-lg text-slate-400">Ace High Club empowers you to ascend the ranks, tracking your victories and celebrating your rise to poker prominence.</p>
             </div>
           </div>
-          <Pricing />
+          {/*<Pricing />*/}
+            <Leaderboard players={players}/>
         </div>
       </div>
 

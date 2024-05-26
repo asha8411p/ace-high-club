@@ -1,6 +1,9 @@
 import './css/style.css'
 
 import { Inter } from 'next/font/google'
+import {AuthProvider} from "@/app/contexts/AuthContext";
+import {ItemsProvider} from "@/app/contexts/ItemsContext";
+import {CartProvider} from "@/app/contexts/CartContext";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -19,12 +22,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-inter antialiased bg-slate-900 text-slate-100 tracking-tight`}>
-        <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
-          {children}
-        </div>
-      </body>
-    </html>
+    <AuthProvider>
+      <CartProvider>
+        <ItemsProvider>
+            <html lang="en" className="scroll-smooth">
+              <body className={`${inter.variable} font-inter antialiased bg-slate-900 text-slate-100 tracking-tight`}>
+                <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
+                  {children}
+                </div>
+              </body>
+            </html>
+        </ItemsProvider>
+      </CartProvider>
+    </AuthProvider>
   )
 }

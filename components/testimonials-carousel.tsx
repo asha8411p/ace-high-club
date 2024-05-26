@@ -5,11 +5,17 @@ import Image from 'next/image'
 import Particles from './particles'
 import Highlighter, { HighlighterItem } from './highlighter'
 
-import CarouselImg01 from '@/public/images/carousel-icon-01.svg'
-import CarouselImg02 from '@/public/images/carousel-icon-02.svg'
-import CarouselImg03 from '@/public/images/carousel-icon-03.svg'
-import CarouselImg04 from '@/public/images/carousel-icon-04.svg'
-import CarouselImg05 from '@/public/images/carousel-icon-05.svg'
+// import CarouselImg01 from '@/public/images/carousel-icon-01.svg'
+// import CarouselImg02 from '@/public/images/carousel-icon-02.svg'
+// import CarouselImg03 from '@/public/images/carousel-icon-03.svg'
+// import CarouselImg04 from '@/public/images/carousel-icon-04.svg'
+// import CarouselImg05 from '@/public/images/carousel-icon-05.svg'
+
+import Person01 from '@/public/images/person-01.jpg'
+import Person02 from '@/public/images/person-02.webp'
+import Person03 from '@/public/images/person-03.jpg'
+import Person04 from '@/public/images/person-04.webp'
+import Person05 from '@/public/images/person-05.jpg'
 
 // Import Swiper
 import Swiper, { Navigation } from 'swiper'
@@ -75,7 +81,8 @@ export default function TestimonialsCarousel() {
                       <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]" />
                     </div>
                     <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg01} width={56} height={56} alt="Icon 01" />
+                      {/*<Image className="mb-3" src={CarouselImg01} width={56} height={56} alt="Icon 01" />*/}
+                      <Image className="rounded-full aspect-square object-cover mb-3" src={Person01} width={56} height={56} alt="Icon 01"/>
                       <div className="grow">
                         <div className="font-bold text-lg mb-1">Nathan Brooks</div>
                         <div className="text-slate-400 mb-3"> Emerged victorious at the Darling Harbour Dealers' Duel, bagging $275,000.</div>
@@ -95,7 +102,8 @@ export default function TestimonialsCarousel() {
                       <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]" />
                     </div>
                     <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg02} width={56} height={56} alt="Icon 01" />
+                      {/*<Image className="mb-3" src={CarouselImg02} width={56} height={56} alt="Icon 01" />*/}
+                      <Image className="rounded-full aspect-square object-cover mb-3" src={Person02} width={56} height={56} alt="Icon 01" />
                       <div className="grow">
                         <div className="font-bold text-lg mb-1">Claire Thompson</div>
                         <div className="text-slate-400 mb-3">Triumphed at the Harbour City Hold'em Championship with a staggering win of $300,000.</div>
@@ -115,7 +123,8 @@ export default function TestimonialsCarousel() {
                       <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]" />
                     </div>
                     <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg03} width={56} height={56} alt="Icon 01" />
+                      {/*<Image className="mb-3" src={CarouselImg03} width={56} height={56} alt="Icon 01" />*/}
+                      <Image className="rounded-full aspect-square object-cover mb-3" src={Person03} width={56} height={56} alt="Icon 01" />
                       <div className="grow">
                         <div className="font-bold text-lg mb-1">Julian Morales</div>
                         <div className="text-slate-400 mb-3">Amassed over $350,000 in winnings from the prestigious Bondi Beach Poker Classic.</div>
@@ -135,7 +144,8 @@ export default function TestimonialsCarousel() {
                       <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]" />
                     </div>
                     <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg04} width={56} height={56} alt="Icon 01" />
+                      {/*<Image className="mb-3" src={CarouselImg04} width={56} height={56} alt="Icon 01" />*/}
+                      <Image className="rounded-full aspect-square object-cover mb-3" src={Person04} width={56} height={56} alt="Icon 01" />
                       <div className="grow">
                         <div className="font-bold text-lg mb-1">Rachel Patel </div>
                         <div className="text-slate-400 mb-3">Outplayed competitors at the Kings Cross Card Clash, earning a solid $220,000.</div>
@@ -155,7 +165,8 @@ export default function TestimonialsCarousel() {
                       <div className="absolute inset-0 translate-z-0 rounded-full bg-slate-800 group-[.swiper-slide-active]/slide:bg-purple-500 transition-colors duration-500 ease-in-out blur-[60px]" />
                     </div>
                     <div className="flex flex-col p-6 h-full">
-                      <Image className="mb-3" src={CarouselImg05} width={56} height={56} alt="Icon 05" />
+                      {/*<Image className="mb-3" src={CarouselImg05} width={56} height={56} alt="Icon 05" />*/}
+                      <Image className="rounded-full aspect-square object-cover mb-3" src={Person05} width={56} height={56} alt="Icon 05" />
                       <div className="grow">
                         <div className="font-bold text-lg mb-1">Kyle Bennett</div>
                         <div className="text-slate-400 mb-3"> Dominated at the Canberra Capital Poker Challenge, pocketing a hefty $450,000.</div>

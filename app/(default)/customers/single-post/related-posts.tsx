@@ -14,22 +14,22 @@ export default function RelatedPosts() {
   const items = [
     {
       name: 'Customer name',
-      img: CustomerImg02,
-      bg: CustomerBg02,
-      link: '/customers/single-post',
-    },
-    {
-      name: 'Customer name',
       img: CustomerImg03,
       bg: CustomerBg03,
-      link: '/customers/single-post',
+      link: '/customers/connect-with-others',
     },
     {
       name: 'Customer name',
-      img: CustomerImg06,
-      bg: CustomerBg06,
-      link: '/customers/single-post',
+      img: CustomerImg02,
+      bg: CustomerBg02,
+      link: '/customers/gambling-help-online',
     },
+    // {
+    //   name: 'Customer name',
+    //   img: CustomerImg06,
+    //   bg: CustomerBg06,
+    //   link: '/customers/single-post',
+    // },
   ]
 
   return (

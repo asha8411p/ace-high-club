@@ -53,7 +53,6 @@ export default function Team() {
                   <Image className="shrink-0" src={item.img} width="200" height="200" alt={item.name} />
                   <div className="text-center">
                     <div className="font-bold text-slate-100 mb-0.5">{item.name}</div>
-                    <div className="text-sm text-purple-500 font-medium">{item.role}</div>
                     <div className="text-sm text-purple-500 font-medium">Student ID: {item.studentID}</div>
                     <div className="text-xs text-slate-400">{item.description}</div>
                   </div>

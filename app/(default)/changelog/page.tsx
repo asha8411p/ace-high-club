@@ -1,8 +1,3 @@
-export const metadata = {
-  title: 'Learn Poker - Ace High Club',
-  description: 'Page description',
-}
-
 import { allUpdates } from 'contentlayer/generated'
 import Image from 'next/image'
 import Illustration from '@/public/images/page-illustration.svg'
@@ -17,11 +12,7 @@ export default function Changelog() {
   })
 
   return (
-    <>
-
-      {/* Content */}
       <section className="relative">
-
         {/* Radial gradient */}
         <div className="absolute flex items-center justify-center top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-[800px] aspect-square" aria-hidden="true">
           <div className="absolute inset-0 translate-z-0 bg-purple-500 rounded-full blur-[120px] opacity-30"></div>
@@ -35,12 +26,11 @@ export default function Changelog() {
 
         {/* Illustration */}
         <div className="md:block absolute left-1/2 -translate-x-1/2 -mt-16 blur-2xl opacity-90 pointer-events-none -z-10" aria-hidden="true">
-          <Image src={Illustration} className="max-w-none" width={1440} height={427} alt="Page Illustration" />
+          <Image src={Illustration} className="max-w-none" width={1440} height={427} alt="Page Illustration"/>
         </div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="pt-32 pb-12 md:pt-40 md:pb-20">
-
             {/* Page header */}
             <div className="text-center pb-12 md:pb-20">
               <h1 className="h1 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Master the Art of Poker with Ace High Club</h1>
@@ -49,42 +39,39 @@ export default function Changelog() {
               </div>
             </div>
 
-            {/* Content */}
+            {/* Explanation of Poker */}
             <div className="max-w-3xl mx-auto">
-              <div className="relative">
-                <div className="absolute h-full top-4 left-[2px] w-0.5 bg-slate-800 [mask-image:_linear-gradient(0deg,transparent,theme(colors.white)_150px,theme(colors.white))] -z-10 overflow-hidden after:absolute after:h-4 after:top-0 after:-translate-y-full after:left-0 after:w-0.5 after:bg-[linear-gradient(180deg,_transparent,_theme(colors.purple.500/.65)_25%,_theme(colors.purple.200)_50%,_theme(colors.purple.500/.65)_75%,_transparent)] after:animate-shine" aria-hidden="true"></div>
-                {allUpdates.map((post, postIndex) => (
-                  <PostItem key={postIndex} {...post} />
-                ))}
+              <div className="pb-8">
+                <h2 className="text-2xl font-semibold text-slate-200 mb-4">How Poker Works</h2>
+                <p className="text-lg text-slate-400 leading-relaxed">
+                  Poker is a popular card game that combines strategy, skill, and chance. It is played in various forms around the world, with each version having its own set of rules and nuances. However, the basic premise of the game remains the same: players wager money or chips on the strength of their hand, based on the rankings of different card combinations.
+                </p>
+                <p className="text-lg text-slate-400 leading-relaxed mt-4">
+                  The game typically involves multiple rounds of betting, where players can either call (match the current bet), raise (increase the bet), or fold (withdraw from the hand). The objective of poker is to win chips or money by either having the best hand at showdown or by convincing other players to fold their hands.
+                </p>
+                <p className="text-lg text-slate-400 leading-relaxed mt-4">
+                  Poker hands are ranked based on the probability of achieving them. The highest-ranking hand is usually a royal flush, followed by straight flush, four of a kind, full house, flush, straight, three of a kind, two pair, one pair, and high card. Understanding the ranking of hands is essential for making strategic decisions during gameplay.
+                </p>
               </div>
             </div>
 
-            {/* Pagination */}
+            {/* Additional Resources */}
             <div className="max-w-3xl mx-auto">
-              <ul className="flex items-center justify-between mt-12 pl-8 md:pl-48">
-                <li>
-                  <span className="btn-sm text-slate-700 transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none cursor-not-allowed">
-                    <span className="relative inline-flex items-center">
-                      <span className="tracking-normal text-slate-700 mr-1">&lt;-</span> Previous Page
-                    </span>
-                  </span>
-                </li>
-                <li>
-                  <a className="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none" href="#0">
-                    <span className="relative inline-flex items-center">
-                      Next Page <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
-                    </span>
-                  </a>
-                </li>
-              </ul>
+              <div className="pb-8">
+                <h2 className="text-2xl font-semibold text-slate-200 mb-4">Additional Resources</h2>
+                <p className="text-lg text-slate-400 leading-relaxed">
+                  If you're looking to improve your poker skills further, here are some additional resources you can refer to:
+                </p>
+                <ul className="list-disc text-lg text-slate-400 pl-6 mt-4">
+                  <li><a href="https://www.pokerstrategy.com/" className="text-purple-500 hover:underline">PokerStrategy.com</a> - Offers strategy articles, videos, and forums for poker players of all levels.</li>
+                  <li><a href="https://www.cardplayer.com/" className="text-purple-500 hover:underline">CardPlayer.com</a> - Provides news, strategy articles, and tournament coverage for both online and live poker players.</li>
+                  <li><a href="https://www.twoplustwo.com/" className="text-purple-500 hover:underline">TwoPlusTwo.com</a> - Features forums where players can discuss strategy, hand analysis, and industry news.</li>
+                </ul>
+              </div>
             </div>
-
           </div>
         </div>
-
       </section>
+  );
 
-      <Cta />
-    </>
-  )
 }
